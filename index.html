@@ -385,90 +385,69 @@
         </div>
 
         <!-- Slide 5: Graph Structure -->
-        <div class="slide">
-            <h2>📊 Struktur Data Graph</h2>
-            
-            <p>Struktur data graph merupakan konsep penting dalam ilmu komputer yang digunakan untuk merepresentasikan hubungan antar entitas melalui simpul (vertex) dan sisi (edge). Graph banyak dimanfaatkan dalam berbagai bidang, seperti jaringan komunikasi, struktur organisasi, hingga proses pencarian data.</p>
+<div class="slide">
+            <h2>📊 Struktur Data Graph</h2>
+            
+            <p>Struktur data graph merupakan konsep penting dalam ilmu komputer yang digunakan untuk merepresentasikan hubungan antar entitas melalui simpul (vertex) dan sisi (edge). Graph banyak dimanfaatkan dalam berbagai bidang, seperti jaringan komunikasi, struktur organisasi, hingga proses pencarian data.</p>
 
-            <div style="display: flex; justify-content: space-between; align-items: center; margin: 30px 0;">
-                <div style="flex: 1; padding-right: 30px;">
-                    <h3>🎯 Directed Graph</h3>
-                    <p>Graph dengan arah pada setiap sisi sangat sesuai untuk memodelkan jejaring sosial karena hubungan antar pengguna tidak selalu timbal balik. Dalam konteks ini:</p>
-                    <ul style="margin-left: 20px; color: #555; line-height: 1.8;">
-                        <li><strong>Simpul (Vertex):</strong> Merepresentasikan pengguna</li>
-                        <li><strong>Sisi (Edge):</strong> Menggambarkan koneksi seperti pertemanan atau following</li>
-                        <li><strong>Arah:</strong> Menunjukkan siapa yang mengikuti siapa</li>
-                    </ul>
-                    <p style="margin-top: 15px; font-style: italic; color: #667eea;">Contoh: Di Instagram, pengguna A dapat mengikuti pengguna B tanpa harus diikuti kembali</p>
-                </div>
-                
-                <div style="flex: 1; text-align: center;">
-                    <div style="background: #f8f9fa; border: 2px solid #e9ecef; border-radius: 15px; padding: 30px; position: relative;">
-                        <h4 style="margin-bottom: 20px; color: #495057;">Contoh Directed Graph</h4>
-                        
-                        <!-- Graph visualization -->
-                        <svg width="300" height="200" style="margin: 0 auto;">
-                            <!-- Nodes -->
-                            <circle cx="50" cy="150" r="25" fill="#667eea" stroke="#fff" stroke-width="3"/>
-                            <text x="50" y="155" text-anchor="middle" fill="white" font-size="16" font-weight="bold">1</text>
-                            
-                            <circle cx="50" cy="50" r="25" fill="#667eea" stroke="#fff" stroke-width="3"/>
-                            <text x="50" y="55" text-anchor="middle" fill="white" font-size="16" font-weight="bold">2</text>
-                            
-                            <circle cx="150" cy="100" r="25" fill="#667eea" stroke="#fff" stroke-width="3"/>
-                            <text x="150" y="105" text-anchor="middle" fill="white" font-size="16" font-weight="bold">3</text>
-                            
-                            <circle cx="250" cy="50" r="25" fill="#667eea" stroke="#fff" stroke-width="3"/>
-                            <text x="250" y="55" text-anchor="middle" fill="white" font-size="16" font-weight="bold">4</text>
-                            
-                            <!-- Arrows -->
-                            <defs>
-                                <marker id="arrowhead" markerWidth="10" markerHeight="7" 
-                                        refX="9" refY="3.5" orient="auto">
-                                    <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50"/>
-                                </marker>
-                            </defs>
-                            
-                            <!-- Edges with arrows -->
-                            <line x1="65" y1="135" x2="135" y2="115" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
-                            <line x1="65" y1="65" x2="135" y2="85" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
-                            <line x1="175" y1="100" x2="225" y2="65" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
-                            <line x1="50" y1="125" x2="50" y2="75" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
-                            <line x1="225" y1="65" x2="175" y2="85" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
-                            
-                            <!-- Labels -->
-                            <text x="100" y="120" text-anchor="middle" fill="#495057" font-size="12">1→3</text>
-                            <text x="100" y="75" text-anchor="middle" fill="#495057" font-size="12">2→3</text>
-                            <text x="200" y="75" text-anchor="middle" fill="#495057" font-size="12">3→4</text>
-                            <text x="30" y="100" text-anchor="middle" fill="#495057" font-size="12">1→2</text>
-                            <text x="200" y="95" text-anchor="middle" fill="#495057" font-size="12">4→3</text>
-                        </svg>
-                        
-                        <p style="margin-top: 15px; color: #666; font-size: 0.9rem;">
-                            User 1 mengikuti User 2 dan 3<br/>
-                            User 2 mengikuti User 3<br/>
-                            User 3 dan 4 saling mengikuti
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <h4>🔍 Adjacency List</h4>
-                    <p>Implementasi efisien untuk menyimpan koneksi setiap pengguna</p>
-                </div>
-                <div class="feature-card">
-                    <h4>🎯 Traversal Algorithm</h4>
-                    <p>DFS/BFS untuk mencari path dan koneksi antar pengguna</p>
-                </div>
-                <div class="feature-card">
-                    <h4>📈 Scalability</h4>
-                    <p>Struktur yang optimal untuk jutaan pengguna dan koneksi</p>
-                </div>
-            </div>
-        </div>
-
+            <div style="display: flex; justify-content: space-between; align-items: center; margin: 30px 0;">
+                <div style="flex: 1; padding-right: 30px;">
+                    <h3>🎯 Directed Graph</h3>
+                    <p>Graph dengan arah pada setiap sisi sangat sesuai untuk memodelkan jejaring sosial karena hubungan antar pengguna tidak selalu timbal balik. Dalam konteks ini:</p>
+                    <ul style="margin-left: 20px; color: #555; line-height: 1.8;">
+                        <li><strong>Simpul (Vertex):</strong> Merepresentasikan pengguna</li>
+                        <li><strong>Sisi (Edge):</strong> Menggambarkan koneksi seperti pertemanan atau following</li>
+                        <li><strong>Arah:</strong> Menunjukkan siapa yang mengikuti siapa</li>
+                    </ul>
+                    <p style="margin-top: 15px; font-style: italic; color: #667eea;">Contoh: Di Instagram, pengguna A dapat mengikuti pengguna B tanpa harus diikuti kembali</p>
+                </div>
+                
+                <div style="flex: 1; text-align: center;">
+                    <div style="background: #f8f9fa; border: 2px solid #e9ecef; border-radius: 15px; padding: 30px; position: relative;">
+                        <h4 style="margin-bottom: 20px; color: #495057;">Contoh Directed Graph</h4>
+                        
+                                                <svg width="300" height="200" style="margin: 0 auto;">
+                                                        <circle cx="50" cy="150" r="25" fill="#667eea" stroke="#fff" stroke-width="3"/>
+                            <text x="50" y="155" text-anchor="middle" fill="white" font-size="16" font-weight="bold">1</text>
+                            
+                            <circle cx="50" cy="50" r="25" fill="#667eea" stroke="#fff" stroke-width="3"/>
+                            <text x="50" y="55" text-anchor="middle" fill="white" font-size="16" font-weight="bold">2</text>
+                            
+                            <circle cx="150" cy="100" r="25" fill="#667eea" stroke="#fff" stroke-width="3"/>
+                            <text x="150" y="105" text-anchor="middle" fill="white" font-size="16" font-weight="bold">3</text>
+                            
+                            <circle cx="250" cy="50" r="25" fill="#667eea" stroke="#fff" stroke-width="3"/>
+                            <text x="250" y="55" text-anchor="middle" fill="white" font-size="16" font-weight="bold">4</text>
+                            
+                                                        <defs>
+                                <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+                                        refX="9" refY="3.5" orient="auto">
+                                    <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50"/>
+                                </marker>
+                            </defs>
+                            
+                                                        <line x1="65" y1="135" x2="135" y2="115" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+                            <line x1="65" y1="65" x2="135" y2="85" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+                            <line x1="175" y1="100" x2="225" y2="65" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+                            <line x1="50" y1="125" x2="50" y2="75" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+                            <line x1="225" y1="65" x2="175" y2="85" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+                            
+                                                        <text x="100" y="120" text-anchor="middle" fill="#495057" font-size="12">1→3</text>
+                            <text x="100" y="75" text-anchor="middle" fill="#495057" font-size="12">2→3</text>
+                            <text x="200" y="75" text-anchor="middle" fill="#495057" font-size="12">3→4</text>
+                            <text x="30" y="100" text-anchor="middle" fill="#495057" font-size="12">1→2</text>
+                            <text x="200" y="95" text-anchor="middle" fill="#495057" font-size="12">4→3</text>
+                        </svg>
+                        
+                        <p style="margin-top: 15px; color: #666; font-size: 0.9rem;">
+                            User 1 mengikuti User 2 dan 3<br/>
+                            User 2 mengikuti User 3<br/>
+                            User 3 dan 4 saling mengikuti
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Slide 6: Arsitektur Sistem -->
         <div class="slide">
             <h2>🏗️ Arsitektur Sistem</h2>
