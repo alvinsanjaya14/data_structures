@@ -212,19 +212,105 @@
         <!-- Slide 1: Title -->
         <div class="slide active">
             <h1>🌐 Konsep Aplikasi Social Network Java</h1>
-            <div style="text-align: center; margin: 50px 0;">
-                <div style="font-size: 1.5rem; color: #555; margin-bottom: 30px;">
-                    Platform Jejaring Sosial Berbasis Java
+            
+            <div style="display: flex; justify-content: space-between; align-items: center; margin: 40px 0;">
+                <!-- Left side - Title content -->
+                <div style="flex: 1; padding-right: 40px;">
+                    <div style="font-size: 1.5rem; color: #555; margin-bottom: 20px;">
+                        Platform Jejaring Sosial Berbasis Java
+                    </div>
+                    <div style="font-size: 1.2rem; color: #777; margin-bottom: 30px;">
+                        Menghubungkan Pengguna Melalui Sistem Follow/Unfollow
+                    </div>
+                    <div class="tech-stack">
+                        <div class="tech-item">☕ Java</div>
+                        <div class="tech-item">🗄️ Data Structures</div>
+                        <div class="tech-item">🔗 Graph Theory</div>
+                        <div class="tech-item">👥 Social Networking</div>
+                    </div>
                 </div>
-                <div style="font-size: 1.2rem; color: #777;">
-                    Menghubungkan Pengguna Melalui Sistem Follow/Unfollow
+                
+                <!-- Right side - BFS Algorithm visualization -->
+                <div style="flex: 1; text-align: center;">
+                    <div style="background: #f8f9fa; border: 2px solid #e9ecef; border-radius: 15px; padding: 30px;">
+                        <h3 style="color: #4a6cf7; margin-bottom: 20px; font-size: 1.5rem;">Breadth-First Search Algorithm</h3>
+                        
+                        <!-- BFS Tree visualization -->
+                        <svg width="400" height="300" style="margin: 0 auto;">
+                            <!-- Layer 0 -->
+                            <rect x="175" y="20" width="90" height="35" fill="none" stroke="#ccc" stroke-dasharray="5,5" rx="5"/>
+                            <text x="175" y="15" fill="#666" font-size="12" font-weight="bold">Layer 0</text>
+                            <text x="285" y="15" fill="#666" font-size="12">Source node</text>
+                            
+                            <circle cx="220" cy="45" r="18" fill="#4a6cf7" stroke="#fff" stroke-width="2"/>
+                            <text x="220" y="50" text-anchor="middle" fill="white" font-size="14" font-weight="bold">0</text>
+                            
+                            <!-- Layer 1 -->
+                            <rect x="50" y="100" width="300" height="35" fill="none" stroke="#ccc" stroke-dasharray="5,5" rx="5"/>
+                            <text x="50" y="95" fill="#666" font-size="12" font-weight="bold">Layer 1</text>
+                            
+                            <circle cx="120" cy="120" r="18" fill="#4a6cf7" stroke="#fff" stroke-width="2"/>
+                            <text x="120" y="125" text-anchor="middle" fill="white" font-size="14" font-weight="bold">1</text>
+                            
+                            <circle cx="190" cy="120" r="18" fill="#4a6cf7" stroke="#fff" stroke-width="2"/>
+                            <text x="190" y="125" text-anchor="middle" fill="white" font-size="14" font-weight="bold">2</text>
+                            
+                            <circle cx="260" cy="120" r="18" fill="#4a6cf7" stroke="#fff" stroke-width="2"/>
+                            <text x="260" y="125" text-anchor="middle" fill="white" font-size="14" font-weight="bold">3</text>
+                            
+                            <!-- Layer 2 -->
+                            <rect x="50" y="190" width="300" height="35" fill="none" stroke="#ccc" stroke-dasharray="5,5" rx="5"/>
+                            <text x="50" y="185" fill="#666" font-size="12" font-weight="bold">Layer 2</text>
+                            
+                            <circle cx="90" cy="210" r="18" fill="#4a6cf7" stroke="#fff" stroke-width="2"/>
+                            <text x="90" y="215" text-anchor="middle" fill="white" font-size="14" font-weight="bold">4</text>
+                            
+                            <circle cx="150" cy="210" r="18" fill="#4a6cf7" stroke="#fff" stroke-width="2"/>
+                            <text x="150" y="215" text-anchor="middle" fill="white" font-size="14" font-weight="bold">5</text>
+                            
+                            <circle cx="210" cy="210" r="18" fill="#4a6cf7" stroke="#fff" stroke-width="2"/>
+                            <text x="210" y="215" text-anchor="middle" fill="white" font-size="14" font-weight="bold">6</text>
+                            
+                            <circle cx="270" cy="210" r="18" fill="#4a6cf7" stroke="#fff" stroke-width="2"/>
+                            <text x="270" y="215" text-anchor="middle" fill="white" font-size="14" font-weight="bold">7</text>
+                            
+                            <!-- Connections -->
+                            <line x1="210" y1="60" x2="130" y2="105" stroke="#2c3e50" stroke-width="2"/>
+                            <line x1="220" y1="60" x2="190" y2="105" stroke="#2c3e50" stroke-width="2"/>
+                            <line x1="230" y1="60" x2="250" y2="105" stroke="#2c3e50" stroke-width="2"/>
+                            
+                            <line x1="110" y1="135" x2="95" y2="195" stroke="#2c3e50" stroke-width="2"/>
+                            <line x1="130" y1="135" x2="145" y2="195" stroke="#2c3e50" stroke-width="2"/>
+                            <line x1="185" y1="135" x2="155" y2="195" stroke="#2c3e50" stroke-width="2"/>
+                            <line x1="195" y1="135" x2="205" y2="195" stroke="#2c3e50" stroke-width="2"/>
+                            <line x1="250" y1="135" x2="275" y2="195" stroke="#2c3e50" stroke-width="2"/>
+                            
+                            <!-- Dotted arrows between layers -->
+                            <defs>
+                                <marker id="dotted-arrow" markerWidth="8" markerHeight="6" 
+                                        refX="7" refY="3" orient="auto">
+                                    <polygon points="0 0, 8 3, 0 6" fill="#666"/>
+                                </marker>
+                            </defs>
+                            
+                            <!-- Horizontal dotted arrows in layers -->
+                            <line x1="138" y1="120" x2="172" y2="120" stroke="#666" stroke-width="1" stroke-dasharray="3,3" marker-end="url(#dotted-arrow)"/>
+                            <line x1="208" y1="120" x2="242" y2="120" stroke="#666" stroke-width="1" stroke-dasharray="3,3" marker-end="url(#dotted-arrow)"/>
+                            
+                            <line x1="108" y1="210" x2="132" y2="210" stroke="#666" stroke-width="1" stroke-dasharray="3,3" marker-end="url(#dotted-arrow)"/>
+                            <line x1="168" y1="210" x2="192" y2="210" stroke="#666" stroke-width="1" stroke-dasharray="3,3" marker-end="url(#dotted-arrow)"/>
+                            <line x1="228" y1="210" x2="252" y2="210" stroke="#666" stroke-width="1" stroke-dasharray="3,3" marker-end="url(#dotted-arrow)"/>
+                        </svg>
+                        
+                        <div style="margin-top: 15px;">
+                            <div style="background: rgba(74, 108, 247, 0.1); padding: 10px; border-radius: 8px; font-size: 0.9rem; color: #4a6cf7;">
+                                <strong>BFS dalam Social Network:</strong><br/>
+                                Algoritma untuk menemukan jalur terpendek<br/>
+                                antara pengguna dan koneksi mereka
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="tech-stack" style="justify-content: center;">
-                <div class="tech-item">☕ Java</div>
-                <div class="tech-item">🗄️ Data Structures</div>
-                <div class="tech-item">🔗 Graph Theory</div>
-                <div class="tech-item">👥 Social Networking</div>
             </div>
         </div>
 
@@ -298,7 +384,92 @@
             </ul>
         </div>
 
-        <!-- Slide 5: Arsitektur Sistem -->
+        <!-- Slide 5: Graph Structure -->
+        <div class="slide">
+            <h2>📊 Struktur Data Graph</h2>
+            
+            <p>Struktur data graph merupakan konsep penting dalam ilmu komputer yang digunakan untuk merepresentasikan hubungan antar entitas melalui simpul (vertex) dan sisi (edge). Graph banyak dimanfaatkan dalam berbagai bidang, seperti jaringan komunikasi, struktur organisasi, hingga proses pencarian data.</p>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; margin: 30px 0;">
+                <div style="flex: 1; padding-right: 30px;">
+                    <h3>🎯 Directed Graph</h3>
+                    <p>Graph dengan arah pada setiap sisi sangat sesuai untuk memodelkan jejaring sosial karena hubungan antar pengguna tidak selalu timbal balik. Dalam konteks ini:</p>
+                    <ul style="margin-left: 20px; color: #555; line-height: 1.8;">
+                        <li><strong>Simpul (Vertex):</strong> Merepresentasikan pengguna</li>
+                        <li><strong>Sisi (Edge):</strong> Menggambarkan koneksi seperti pertemanan atau following</li>
+                        <li><strong>Arah:</strong> Menunjukkan siapa yang mengikuti siapa</li>
+                    </ul>
+                    <p style="margin-top: 15px; font-style: italic; color: #667eea;">Contoh: Di Instagram, pengguna A dapat mengikuti pengguna B tanpa harus diikuti kembali</p>
+                </div>
+                
+                <div style="flex: 1; text-align: center;">
+                    <div style="background: #f8f9fa; border: 2px solid #e9ecef; border-radius: 15px; padding: 30px; position: relative;">
+                        <h4 style="margin-bottom: 20px; color: #495057;">Contoh Directed Graph</h4>
+                        
+                        <!-- Graph visualization -->
+                        <svg width="300" height="200" style="margin: 0 auto;">
+                            <!-- Nodes -->
+                            <circle cx="50" cy="150" r="25" fill="#667eea" stroke="#fff" stroke-width="3"/>
+                            <text x="50" y="155" text-anchor="middle" fill="white" font-size="16" font-weight="bold">1</text>
+                            
+                            <circle cx="50" cy="50" r="25" fill="#667eea" stroke="#fff" stroke-width="3"/>
+                            <text x="50" y="55" text-anchor="middle" fill="white" font-size="16" font-weight="bold">2</text>
+                            
+                            <circle cx="150" cy="100" r="25" fill="#667eea" stroke="#fff" stroke-width="3"/>
+                            <text x="150" y="105" text-anchor="middle" fill="white" font-size="16" font-weight="bold">3</text>
+                            
+                            <circle cx="250" cy="50" r="25" fill="#667eea" stroke="#fff" stroke-width="3"/>
+                            <text x="250" y="55" text-anchor="middle" fill="white" font-size="16" font-weight="bold">4</text>
+                            
+                            <!-- Arrows -->
+                            <defs>
+                                <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+                                        refX="9" refY="3.5" orient="auto">
+                                    <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50"/>
+                                </marker>
+                            </defs>
+                            
+                            <!-- Edges with arrows -->
+                            <line x1="65" y1="135" x2="135" y2="115" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+                            <line x1="65" y1="65" x2="135" y2="85" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+                            <line x1="175" y1="100" x2="225" y2="65" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+                            <line x1="50" y1="125" x2="50" y2="75" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+                            <line x1="225" y1="65" x2="175" y2="85" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+                            
+                            <!-- Labels -->
+                            <text x="100" y="120" text-anchor="middle" fill="#495057" font-size="12">1→3</text>
+                            <text x="100" y="75" text-anchor="middle" fill="#495057" font-size="12">2→3</text>
+                            <text x="200" y="75" text-anchor="middle" fill="#495057" font-size="12">3→4</text>
+                            <text x="30" y="100" text-anchor="middle" fill="#495057" font-size="12">1→2</text>
+                            <text x="200" y="95" text-anchor="middle" fill="#495057" font-size="12">4→3</text>
+                        </svg>
+                        
+                        <p style="margin-top: 15px; color: #666; font-size: 0.9rem;">
+                            User 1 mengikuti User 2 dan 3<br/>
+                            User 2 mengikuti User 3<br/>
+                            User 3 dan 4 saling mengikuti
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h4>🔍 Adjacency List</h4>
+                    <p>Implementasi efisien untuk menyimpan koneksi setiap pengguna</p>
+                </div>
+                <div class="feature-card">
+                    <h4>🎯 Traversal Algorithm</h4>
+                    <p>DFS/BFS untuk mencari path dan koneksi antar pengguna</p>
+                </div>
+                <div class="feature-card">
+                    <h4>📈 Scalability</h4>
+                    <p>Struktur yang optimal untuk jutaan pengguna dan koneksi</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6: Arsitektur Sistem -->
         <!-- <div class="slide">
             <h2>🏗️ Arsitektur Sistem</h2>
             
@@ -327,7 +498,7 @@
             </div>
         </div> -->
 
-        <!-- Slide 6: Teknologi & Implementasi -->
+        <!-- Slide 7: Teknologi & Implementasi -->
         <div class="slide">
             <h2>💻 Teknologi & Implementasi</h2>
             
@@ -356,7 +527,7 @@
             </div>
         </div>
 
-        <!-- Slide 7: Keunggulan & Manfaat -->
+        <!-- Slide 8: Keunggulan & Manfaat -->
         <div class="slide">
             <h2>🌟 Keunggulan & Manfaat</h2>
             
@@ -388,7 +559,7 @@
             </div>
         </div>
 
-        <!-- Slide 8: Pengembangan Lanjutan -->
+        <!-- Slide 9: Pengembangan Lanjutan -->
         <div class="slide">
             <h2>🚀 Pengembangan Lanjutan</h2>
             
@@ -421,7 +592,7 @@
             </div>
         </div>
 
-        <!-- Slide 9: Kesimpulan -->
+        <!-- Slide 10: Kesimpulan -->
         <div class="slide">
             <h2>🎯 Kesimpulan</h2>
             
@@ -459,7 +630,7 @@
         <div class="navigation">
             <button class="nav-btn" id="prevBtn" onclick="changeSlide(-1)">⬅️ Previous</button>
             <div class="slide-counter">
-                <span id="currentSlide">1</span> / <span id="totalSlides">9</span>
+                <span id="currentSlide">1</span> / <span id="totalSlides">10</span>
             </div>
             <button class="nav-btn" id="nextBtn" onclick="changeSlide(1)">Next ➡️</button>
         </div>
